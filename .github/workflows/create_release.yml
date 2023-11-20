@@ -37,10 +37,7 @@ jobs:
           mvn clean package
       - name: copy jars to package dir
         run: |
-          bash scripts/copy_jar.sh
-      - name: tar the package
-        run: |
-          tar -czvf ${{ github.workspace }}/package/sermant-examples-${{ env.version }}.tar.gz package/*
+          bash scripts/copy_jar.sh ${{ env.version }}
       - name: Create Release # 自动发布release版本
         id: create_release
         uses: actions/create-release@v1.1.4

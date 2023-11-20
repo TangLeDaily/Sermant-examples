@@ -17,3 +17,5 @@ find . -type f -name "*.jar" | while read -r jar_file; do
     # 复制jar文件到jars目录下
     cp -v "$jar_file" "package/$jar_name"
 done
+
+tar -czvf package/sermant-examples-$*.tar.gz package/*
