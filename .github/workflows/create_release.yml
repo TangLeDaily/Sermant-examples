@@ -50,7 +50,7 @@ jobs:
           prerelease: false
       # 上传release包 ========================
       - name: Upload Release dynamic-demo # 上传dynamic-demo release包
-        id: upload-release-asset
+        id: upload-release-asset-dynamic
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -60,7 +60,7 @@ jobs:
           asset_name: sermant-examples-dynamic-demo-${{ env.version }}.tar.gz
           asset_content_type: application/tar
       - name: Upload Release flowcontrol-demo # flowcontrol-demo release包
-        id: upload-release-asset
+        id: upload-release-asset-flowcontrol
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -70,7 +70,7 @@ jobs:
           asset_name: sermant-examples-flowcontrol-demo-${{ env.version }}.tar.gz
           asset_content_type: application/tar
       - name: Upload Release grace-demo # grace-demo release包
-        id: upload-release-asset
+        id: upload-release-asset-grace
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -80,7 +80,7 @@ jobs:
           asset_name: sermant-examples-grace-demo-${{ env.version }}.tar.gz
           asset_content_type: application/tar
       - name: Upload Release load-balance-demo # load-balance-demo release包
-        id: upload-release-asset
+        id: upload-release-asset-load-balance
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -90,7 +90,7 @@ jobs:
           asset_name: sermant-examples-load-balance-demo-${{ env.version }}.tar.gz
           asset_content_type: application/tar
       - name: Upload Release monitor-demo # monitor-demo release包
-        id: upload-release-asset
+        id: upload-release-asset-monitor
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -100,7 +100,7 @@ jobs:
           asset_name: sermant-examples-monitor-demo-${{ env.version }}.tar.gz
           asset_content_type: application/tar
       - name: Upload Release router-demo # router-demo release包
-        id: upload-release-asset
+        id: upload-release-asset-router
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -110,7 +110,7 @@ jobs:
           asset_name: sermant-examples-router-demo-${{ env.version }}.tar.gz
           asset_content_type: application/tar
       - name: Upload Release tag-transmission-demo # tag-transmission-demo release包
-        id: upload-release-asset
+        id: upload-release-asset-tag-transmission
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -120,7 +120,7 @@ jobs:
           asset_name: sermant-examples-tag-transmission-demo-${{ env.version }}.tar.gz
           asset_content_type: application/tar
       - name: Upload Release registry-demo # registry-demo release包
-        id: upload-release-asset
+        id: upload-release-asset-registry
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -130,7 +130,7 @@ jobs:
           asset_name: sermant-examples-registry-demo-${{ env.version }}.tar.gz
           asset_content_type: application/tar
       - name: Upload Release springboot-registry-demo # springboot-registry-demo release包
-        id: upload-release-asset
+        id: upload-release-asset-springboot-registry
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -140,7 +140,7 @@ jobs:
           asset_name: sermant-examples-springboot-registry-demo-${{ env.version }}.tar.gz
           asset_content_type: application/tar
       - name: Upload Release visibility-demo # visibility-demo release包
-        id: upload-release-asset
+        id: upload-release-asset-visibility
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -150,7 +150,7 @@ jobs:
           asset_name: sermant-examples-visibility-demo-${{ env.version }}.tar.gz
           asset_content_type: application/tar
       - name: Upload Release removal-demo # removal-demo release包
-        id: upload-release-asset
+        id: upload-release-asset-removal
         uses: actions/upload-release-asset@v1.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
