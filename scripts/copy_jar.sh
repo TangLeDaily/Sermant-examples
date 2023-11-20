@@ -62,14 +62,14 @@ find . -type f -name "rest-provider-1.0.0.jar" -exec cp -v {} package/removal-de
 
 
 # ´ò°ü
-tar -czvf package/result/sermant-examples-dynamic-demo-$*.tar.gz package/dynamic-demo/*
-tar -czvf package/result/sermant-examples-flowcontrol-demo-$*.tar.gz package/flowcontrol-demo/*
-tar -czvf package/result/sermant-examples-grace-demo-$*.tar.gz package/grace-demo/*
-tar -czvf package/result/sermant-examples-load-balance-demo-$*.tar.gz package/load-balance-demo/*
-tar -czvf package/result/sermant-examples-monitor-demo-$*.tar.gz package/monitor-demo/*
-tar -czvf package/result/sermant-examples-router-demo-$*.tar.gz package/router-demo/*
-tar -czvf package/result/sermant-examples-tag-transmission-demo-$*.tar.gz package/tag-transmission-demo/*
-tar -czvf package/result/sermant-examples-registry-demo-$*.tar.gz package/registry-demo/*
-tar -czvf package/result/sermant-examples-springboot-registry-demo-$*.tar.gz package/springboot-registry-demo/*
-tar -czvf package/result/sermant-examples-visibility-demo-$*.tar.gz package/visibility-demo/*
-tar -czvf package/result/sermant-examples-removal-demo-$*.tar.gz package/removal-demo/*
+tar -czvf package/result/sermant-examples-dynamic-demo-$*.tar.gz -C package/dynamic-demo/ .
+tar -czvf package/result/sermant-examples-flowcontrol-demo-$*.tar.gz -C package/flowcontrol-demo/ .
+tar -czvf package/result/sermant-examples-grace-demo-$*.tar.gz -C package/grace-demo/ .
+tar -czvf package/result/sermant-examples-load-balance-demo-$*.tar.gz -C package/load-balance-demo/ .
+tar -czvf package/result/sermant-examples-monitor-demo-$*.tar.gz -C package/monitor-demo/ .
+tar -czvf package/result/sermant-examples-router-demo-$*.tar.gz -C package/router-demo/ .
+tar -czvf package/result/sermant-examples-tag-transmission-demo-$*.tar.gz -C package/tag-transmission-demo/ .
+tar -czvf package/result/sermant-examples-registry-demo-$*.tar.gz -C package/registry-demo/ .
+tar -czvf package/result/sermant-examples-springboot-registry-demo-$*.tar.gz -C package/springboot-registry-demo/ .
+tar -czvf package/result/sermant-examples-visibility-demo-$*.tar.gz -C package/visibility-demo/ .
+tar -czvf package/result/sermant-examples-removal-demo-$*.tar.gz -C package/removal-demo/ .
